@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML Showcase Page</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header, footer, article, aside, nav {
+            padding: 20px;
+            margin: 10px auto;
+            border-radius: 8px;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+        }
+        nav a {
+            color: #007bff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex; /* 2. CSS Flexbox Layout */
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        article {
+            flex: 3;
+            background-color: white;
+            margin-right: 20px;
+        }
+        aside {
+            flex: 1;
+            background-color: #e9ecef;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Advanced HTML Page</h1>
+        <p>A demonstration of various HTML5 elements and structure</p>
+    </header>
+
+    <nav>
+        <a href="#article-main">Main Content</a>
+        <a href="#data-table">Data Table</a>
+        <a href="#contact-form">Contact</a>
+    </nav>
+    
+    <div class="container">
+        
+        <article id="article-main">
+            <h2>The Importance of Semantic HTML</h2>
+            <p>Using semantic tags like **`<header>`**, **`<nav>`**, **`<main>`**, **`<article>`**, **`<aside>`**, and **`<footer>`** provides context to the browser and improves **Accessibility** and **SEO** (Search Engine Optimization).</p>
+            
+            <figure>
+                <img src="placeholder.jpg" alt="A placeholder image for demonstration" style="width: 100%; max-width: 400px; height: auto;">
+                <figcaption>Figure 1: This is a descriptive caption for the image above.</figcaption>
+            </figure>
+
+            <h3>Audio Example</h3>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3 id="data-table">Sample Data Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>HTML5 Support</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Semantic Tags</td>
+                        <td>Yes</td>
+                        <td>Standard</td>
+                    </tr>
+                    <tr>
+                        <td>Audio/Video</td>
+                        <td>Yes</td>
+                        <td>Standard</td>
+                    </tr>
+                    <tr>
+                        <td>Custom Forms</td>
+                        <td>Enhanced</td>
+                        <td>In Use</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 id="contact-form">Contact Us</h3>
+            <form action="/submit-form" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="topic">Choose Topic:</label>
+                <select id="topic" name="topic">
+                    <option value="general">General Inquiry</option>
+                    <option value="feedback">Product Feedback</option>
+                    <option value="support">Technical Support</option>
+                </select><br><br>
+                
+                <label>Preference:</label>
+                <input type="radio" id="phone" name="contact_pref" value="phone">
+                <label for="phone">Phone</label>
+                <input type="radio" id="email_pref" name="contact_pref" value="email" checked>
+                <label for="email_pref">Email</label><br><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+
+        </article>
+
+        <aside>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML Docs</a></li>
+                <li><a href="#">Article 2</a></li>
+                <li><a href="#">Article 3</a></li>
+            </ul>
+        </aside>
+
+    </div>
+    
+    <footer>
+        <p>© 2025 Advanced HTML Page Showcase. Built with modern standards.</p>
+        <p><small>Note: This is a static page. The form does not actually submit data.</small></p>
+    </footer>
+
+</body>
+</html>
